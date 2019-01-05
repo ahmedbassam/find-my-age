@@ -1,0 +1,29 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+    //Input+
+    println("تطبيق حساب العمر")
+    print("أدخل سنة ميلادك هنا:")
+    var YearOfBirth:Int=readLine()!!.toInt()
+
+    //process
+    var year=Calendar.getInstance().get(Calendar.YEAR)
+    var age=year-YearOfBirth
+
+    //output
+    println("لديك"+age+"سنة")
+
+    //count monthes
+    print("أدخل شهر ميلاد هنا:")
+    var monthofbirth=readLine()!!.toInt()
+    var monthes=(12-monthofbirth)+((age-1)*12)+Calendar.getInstance().get(Calendar.MONTH)
+    println("لديك"+monthes+"شهراً")
+
+    //count days
+    print("أدخل يوم ميلادك هنا:")
+    var dayofbirth=readLine()!!.toInt()
+    var days=(30-dayofbirth)+((12-monthofbirth)*31)+((age-1)*365)+(Calendar.getInstance().get(Calendar.MONTH)*30)+Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
+    println("لديك $days يوماً")
+
+}
