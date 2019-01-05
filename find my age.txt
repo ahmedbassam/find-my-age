@@ -1,0 +1,29 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+    //Input+
+    println("ÊØÈíŞ ÍÓÇÈ ÇáÚãÑ")
+    print("ÃÏÎá ÓäÉ ãíáÇÏß åäÇ:")
+    var YearOfBirth:Int=readLine()!!.toInt()
+
+    //process
+    var year=Calendar.getInstance().get(Calendar.YEAR)
+    var age=year-YearOfBirth
+
+    //output
+    println("áÏíß"+age+"ÓäÉ")
+
+    //count monthes
+    print("ÃÏÎá ÔåÑ ãíáÇÏ åäÇ:")
+    var monthofbirth=readLine()!!.toInt()
+    var monthes=(12-monthofbirth)+((age-1)*12)+Calendar.getInstance().get(Calendar.MONTH)
+    println("áÏíß"+monthes+"ÔåÑÇğ")
+
+    //count days
+    print("ÃÏÎá íæã ãíáÇÏß åäÇ:")
+    var dayofbirth=readLine()!!.toInt()
+    var days=(30-dayofbirth)+((12-monthofbirth)*31)+((age-1)*365)+(Calendar.getInstance().get(Calendar.MONTH)*30)+Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
+    println("áÏíß $days íæãÇğ")
+
+}
