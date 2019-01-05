@@ -1,0 +1,30 @@
+import java.util.*
+
+fun main(args: Array<String>) {
+
+    //Inputs
+    println("تطبيق حساب العمر")
+    println("سنة الميلاد:")
+    var YOB:Int=readLine()!!.toInt()
+    println("شهر الميلاد:")
+    var MOB:Int=readLine()!!.toInt()
+    println("يوم الميلاد:")
+    var DOB:Int=readLine()!!.toInt()
+
+    //process
+    var year=Calendar.getInstance().get(Calendar.YEAR)
+    var month=Calendar.getInstance().get(Calendar.MONTH)
+    var day=Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
+
+    var age=year-YOB
+    var months=(12-MOB)+((age-1)*12)+Calendar.getInstance().get(Calendar.MONTH)
+    var days=(30-DOB)+((12-MOB)*31)+((age-1)*365)+((Calendar.getInstance().get(Calendar.MONTH))*30)+Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
+    var hours=days*24
+
+    //outputs
+    println("عمرك تقريبا هو $age سنة و$months شهرا و $days يوما و $hours ساعة ")
+
+
+
+
+}
