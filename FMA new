@@ -11,19 +11,24 @@ fun main(args: Array<String>) {
     println("يوم الميلاد:")
     var DOB:Int=readLine()!!.toInt()
 
+
+
     //process
     var year=Calendar.getInstance().get(Calendar.YEAR)
     var month=Calendar.getInstance().get(Calendar.MONTH)
     var day=Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
-
     var age=year-YOB
+
     var months=(12-MOB)+((age-1)*12)+Calendar.getInstance().get(Calendar.MONTH)
-    var days=(30-DOB)+((12-MOB)*31)+((age-1)*365)+((Calendar.getInstance().get(Calendar.MONTH))*30)+Calendar.getInstance().get(Calendar.DAY_OF_MONTH)
+    var days=(30-DOB)+((12-MOB)*31)+((age-1)*365)+(month*30)+day
     var hours=days*24
 
     //outputs
-    println("عمرك تقريبا هو $age سنة و$months شهرا و $days يوما و $hours ساعة ")
-
+    println("العمر "+age+" سنة")
+    println("العمر بالشهور $months شهر")
+    println("العمر بالأيام $days يوما")
+    println("العمر بالساعات $hours ساعة ")
+    
 
 
 
