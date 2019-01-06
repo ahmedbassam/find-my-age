@@ -1,0 +1,11 @@
+fun main(args: Array<String>) {
+
+
+
+    println("أدخل القيمة الأولى: ")
+    var a:Int=readLine()!!.toInt()
+    println("أدخل القيمة الثانية")
+    var b:Int=readLine()!!.toInt()
+
+    if (a==b){print("القيم متساوية") }else{print("القيم غير متساوية")}
+}
