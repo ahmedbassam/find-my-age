@@ -1,0 +1,48 @@
+fun main(args: Array<String>) {
+
+    println("تقديري")
+    println("ملاحظة: العلامة من 50 و المجموع من 150")
+    print("أدخل الاسم هنا: ")
+    var name:String= readLine()!!
+    println("أدخل العلامة الأولى")
+    var m1:Float=readLine()!!.toFloat()
+    println("أدخل العلامة الثانية")
+    var m2:Float=readLine()!!.toFloat()
+    println("أدخل العلامة الثالثة")
+    var m3:Float=readLine()!!.toFloat()
+
+    var sum:Float=m1+m2+m3
+    var avr:Float=(sum/150)*100
+    var R:String
+
+    if((m1>50||m1<0)||(m2>50||m2<0)||(m3>50||m3<0)) {println("إدخال خاطئ أعد التحقق")}else {
+
+        if (avr >= 95 && avr <= 100) {
+            R="متميز"
+            println("اسم الطالب: $name ،مجموع العلامات= $sum ،المعدل= $avr ،التقدير: $R")
+        }
+        if (95 > avr && avr >= 85) {
+            R="ممتاز"
+            println("اسم الطالب: $name مجموع العلامات= $sum المعدل= $avr التقدير: $R")
+        }
+        if (85 > avr && avr >= 75) {
+            R="جيد جدا"
+            println("اسم الطالب: $name مجموع العلامات= $sum المعدل= $avr التقدير: $R")
+        }
+        if (75 > avr && avr >= 65) {
+            R="جيد"
+            println("اسم الطالب: $name مجموع العلامات= $sum المعدل= $avr التقدير: $R")
+        }
+        if (65 > avr && avr >= 50) {
+            R="مقبول"
+            println("اسم الطالب: $name مجموع العلامات= $sum المعدل= $avr التقدير: $R")
+        }
+        if (50 > avr && avr >= 0) {
+            R="راسب"
+            println("اسم الطالب: $name مجموع العلامات= $sum المعدل= $avr التقدير: $R")
+        }
+
+
+    }
+
+}
