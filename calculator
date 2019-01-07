@@ -1,0 +1,40 @@
+fun main(args: Array<String>) {
+
+
+    println("حاسبة بسيطة")
+    print("أدخل الرقم الأول: ")
+    var n1:Double=readLine()!!.toDouble()
+    print("أدخل الرقم الثاني: ")
+    var n2:Double= readLine()!!.toDouble()
+
+    println("اختر العملية")
+    println("للجمع اضغط 1")
+    println("للطرح اضغط 2")
+    println("للضرب اضغط 3")
+    println("للقسمة اضغط 4")
+    var A:Int= readLine()!!.toInt()
+
+    var B:Double
+
+    if(A==1){
+        B=n1+n2
+        println("الناتج هو: $B")
+    }else if(A==2){
+        B=n1-n2
+        println("الناتج هو: $B")
+    }else if(A==3){
+        B=n1*n2
+        println("الناتج هو: $B")
+    }else if(A==4){
+        B=n1/n2
+        println("الناتج هو: $B")
+    }else{
+        println("إدخال خاطئ")
+    }
+
+
+
+
+
+
+}
