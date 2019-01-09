@@ -1,0 +1,73 @@
+/*fun main(args: Array<String>) {
+
+    var n=Array<Int>(7){0}
+    n[0]=1
+    n[1]=3
+    n[2]=9
+    n[3]=7
+    n[4]=3
+    n[5]=4
+    n[6]=5
+
+
+    for(i in 0..n.size-1){
+        n.sort()
+        println("the value of n[$i] is: "+n[i])
+    }
+}*/
+
+/*fun main(args: Array<String>) {
+
+    var x=Array<Int>(5){0}
+    var sum=0
+    for(i in 0..x.size-1){
+        println("Enter x$i")
+        x[i]= readLine()!!.toInt()
+    }
+    for(a in 0..x.size-1){
+        sum=sum+x[a]
+    }
+    println("Sum is $sum")
+
+}*/
+
+/*fun main(args: Array<String>) {
+
+    var a=Array<String>(3){""}
+    a[0]="أحمد"
+    a[1]="محمد"
+    a[2]="محمود"
+
+    println("Before Reverse")
+
+    for(i in 0..2){
+        println(a[i])
+    }
+
+    a.reverse()
+
+    println("After Reverse")
+    for(i in 0..2){
+        println(a[i])
+    }
+
+
+}*/
+
+/*fun main(args: Array<String>) {
+
+    var num=Array<Double>(5){0.0}
+    for(i in 0..4){
+        println("أدخل قيمة المتغير "+(i+1))
+        num[i]=readLine()!!.toDouble()
+    }
+
+    println("أدخل قيمة المتغير المراد فحصه: ")
+    var y= readLine()!!.toDouble()
+    if(y in num){
+        println("المصفوفة تحوي هذه القيمة")
+    }else {
+
+        println("المصفوفة لا تحوي هذه القيمة")
+    }
+}*/
